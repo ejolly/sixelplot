@@ -8,4 +8,4 @@ def show(output = sys.stdout):
     plt.savefig(buf)
     buf.seek(0)
     writer = sixel.SixelWriter()
-    writer.draw(buf, output = output)
+    writer.draw(buf, output = output, absolute=True)
